@@ -3,17 +3,6 @@
 ![alt tag](https://github.com/bdjukic/CarND-Vehicle-Detection/raw/master/readme_images/1.jpg)
 A snapshot from the final output of the project
 
-The course material is suggesting the usage of somewhat outdated approach for detecting vehicles which I figured out in the middle of the project by reading this [great paper](https://t.co/VFxlrhQ70C) on the state-of-the-art computer vision for autonomous vehicles. Small snippet from that paper:
-
-> With the work of Dalal & Triggs (2005), linear Support<br>
-Vector Machines (SVMs), that maximizes the margin of all<br>
-samples from a linear decision boundary, in combination with<br>
-Histogram of Orientation (HOG) features have become popular<br>
-tools for classification. However, all previous methods rely on<br>
-hand-crafted features that are difficult to design. **With the renaissance<br>of deep learning, convolutional neural networks have<br>automated this task while significantly boosting performance**.
-
-As it turns out, Deep Neural Networks are outperforming the approach which I have used (Linear Support Vector Machines in combination with Histogram of Oriented Gradients). I will defiantly go back to this project and try out some of the top performers in this list on the same problem:
-Table taken from [https://arxiv.org/pdf/1704.05519.pdf](https://arxiv.org/pdf/1704.05519.pdf)
 
 ![alt tag](https://github.com/bdjukic/CarND-Vehicle-Detection/raw/master/readme_images/2.jpg)
 The process of detecting the vehicles on the road could be summed up in the following steps:
@@ -21,7 +10,7 @@ The process of detecting the vehicles on the road could be summed up in the foll
 ![alt tag](https://github.com/bdjukic/CarND-Vehicle-Detection/raw/master/readme_images/3.jpg)
 ### Training data analysis
 
-Training data is provided by Udacity and it consists of images of [cars](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip) from different angles (8792) and [non-car](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip) (8968) objects. Here are two samples:
+Training data is consists of images of [cars](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip) from different angles (8792) and [non-car](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip) (8968) objects. Here are two samples:
 ![alt tag](https://github.com/bdjukic/CarND-Vehicle-Detection/raw/master/readme_images/4.jpg)
 Examples from the training data set
 
